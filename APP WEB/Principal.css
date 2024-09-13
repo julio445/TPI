@@ -1,0 +1,221 @@
+/* Estilo general para el contenedor */
+.container {
+    background: linear-gradient(to right, #ff0000 25%, #ffffff 75%);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header con el logo y el menú de hamburguesa */
+header {
+    position: relative;
+    padding: 10px;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.menu-toggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.menu-toggle .bar {
+    width: 30px;
+    height: 3px;
+    background-color: #000;
+    margin: 6px 0;
+    transition: 0.3s;
+}
+
+/* Menú de navegación */
+nav {
+    display: none; /* Oculto por defecto */
+    background-color: #fff;
+    position: absolute;
+    top: 120px;
+    right: 10px;
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    border-bottom: 1px solid #ccc;
+}
+
+nav ul li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #000;
+}
+
+nav ul li a:hover {
+    background-color: #f0f0f0;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #000;
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+    font-size: 12px;
+}
+/* Estilo general para el contenedor */
+.container {
+    background: linear-gradient(to right, #ff0000 25%, #ffffff 75%);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header con el logo y el menú de hamburguesa */
+header {
+    position: relative;
+    padding: 10px;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.menu-toggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.menu-toggle .bar {
+    width: 30px;
+    height: 3px;
+    background-color: #000;
+    margin: 6px 0;
+    transition: 0.3s;
+}
+
+/* Menú de navegación */
+nav {
+    display: none; /* Oculto por defecto */
+    background-color: #fff;
+    position: absolute;
+    top: 120px;
+    right: 10px;
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    border-bottom: 1px solid #ccc;
+}
+
+nav ul li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #000;
+}
+
+nav ul li a:hover {
+    background-color: #f0f0f0;
+}
+
+/* Sección principal */
+main {
+    flex: 1;
+    padding: 20px;
+}
+
+/* Sección de bienvenida */
+.welcome {
+    margin-bottom: 20px;
+}
+
+/* Dashboard */
+.dashboard {
+    margin-bottom: 20px;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-between;
+}
+
+.stat-item {
+    width: 48%;
+}
+
+/* Accesos rápidos */
+.quick-links {
+    margin-bottom: 20px;
+}
+
+.quick-link {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    background-color: #f0f0f0;
+    margin-bottom: 10px;
+    color: #000;
+    border-radius: 5px;
+}
+
+.quick-link:hover {
+    background-color: #ddd;
+}
+
+/* Noticias */
+.news {
+    margin-bottom: 20px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #000;
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+    font-size: 12px;
+}
