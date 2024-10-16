@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel Principal - Carga de Notas</title>
+    <link rel="stylesheet" href="./inicio.css">
+    <style>
+        
+        /* Estilos CSS para la opción "Inicio" */
+        #inicio {
+            text-align: center; /* Centrar el contenido */
+            padding: 40px; 
+            background-color: #f13a3a; /* Color de fondo de la página */
+        }
+
+        .contenido {
+            background-color: white; /* Fondo blanco para el contenido */
+            padding: 30px; /* Espacio interno */
+            border-radius: 8px; /* Bordes redondeados */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra para destacar */
+            margin: 20px auto; /* Centrar en la página */
+            max-width: 600px; /* Máximo ancho del contenido */
+        }
+
+        .bienvenida {
+            font-size: 36px; /* Tamaño de la letra */
+            color: #f00000; /* Color de la letra */
+            margin-bottom: 10px;
+            text-align: center; /* Centrar el texto */
+        }
+
+        .descripcion {
+            font-size: 16px; /* Tamaño de la letra más pequeña */
+            color: #000000; /* Color de la letra más pequeña */
+            margin-bottom: 30px; /* Espacio entre la descripción y los botones */
+            text-align: center; /* Centrar el texto */
+        }
+
+        .botones {
+            display: flex;
+            justify-content: center; /* Centrar los botones */
+            gap: 20px; /* Espacio entre los botones */
+        }
+
+        .btn-facebook {
+            background-color: red; /* Color de fondo del botón Facebook */
+            color: white; /* Color del texto */
+            padding: 10px 20px; /* Espaciado dentro del botón */
+            border: none; /* Sin borde */
+            border-radius: 5px; /* Bordes redondeados */
+            cursor: pointer; /* Cambiar el cursor al pasar por encima */
+            font-size: 16px; /* Tamaño de la letra */
+        }
+
+        .btn-facebook:hover {
+            background-color: darkred; /* Color al pasar el mouse por encima */
+        }
+
+        .btn-aulas {
+            background-color: #000000; /* Color de fondo del botón Aulas Virtuales */
+            color: white; /* Color del texto */
+            padding: 10px 20px; /* Espaciado dentro del botón */
+            border: none; /* Sin borde */
+            border-radius: 5px; /* Bordes redondeados */
+            cursor: pointer; /* Cambiar el cursor al pasar por encima */
+            font-size: 16px; /* Tamaño de la letra */
+        }
+
+        .btn-aulas:hover {
+            background-color: #0056b3; /* Color al pasar el mouse por encima */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="C:\Users\Julio\Desktop\TPI\logo guevara.png" alt="Logo" class="logo">
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </header>
+
+        <nav id="nav-menu">
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Mi perfil</a></li>
+                <li><a href="#">Mis notas</a></li>
+                <li><a href="#">Mis faltas</a></li>
+                <li><a href="#">Administración</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <div id="inicio" class="panel">
+                <div class="contenido">
+                    <h1 class="bienvenida">Bienvenido/a</h1>
+                    <p class="descripcion">Acá podés visualizar tus notas, verificar fechas y consultar lo que quieras. Estamos para ayudarte.</p>
+                    
+                    <div class="botones">
+                        <button onclick="window.open('https://www.facebook.com/colegioguevara/?locale=es_LA')" class="btn-facebook">Facebook</button>
+                        <button onclick="window.open('https://secundario.aulasdigitales.tdf.gob.ar/course/index.php?categoryid=2')" class="btn-aulas">Aulas Virtuales</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>2025 Boletín Digital. © Derechos Reservados</p>
+        </footer>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            var navMenu = document.getElementById('nav-menu');
+            navMenu.style.display = navMenu.style.display === 'block' ? 'none' : 'block';
+        }
+
+        function changeProfilePic() {
+            // Lógica para cambiar la foto de perfil
+        }
+
+        function removeProfilePic() {
+            // Lógica para eliminar la foto de perfil
+            document.getElementById('profile-img').src = 'ruta/a/imagen-default.jpg';
+        }
+
+        function changeName() {
+            // Lógica para cambiar el nombre del usuario
+        }
+    </script>
+</body>
+</html>
+
